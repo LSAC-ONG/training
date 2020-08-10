@@ -1,0 +1,16 @@
+
+
+
+
+
+	Database
+
+	O colectie de tabele care au legatura intre ele
+	In general, un database trebuie sa aiba o corelatie intre toate tabelele
+	Nu orice necesitate de date este o corelare de date
+	Exista milioane de datebase-uri in care ne aflam si noi
+
+	Exemplu:
+		- Date despre studenti si facultati
+		- Per total, contine informatii care sa poata lega orice student
+		de facultatea la care este inscris; se pot adauga si alte informatii

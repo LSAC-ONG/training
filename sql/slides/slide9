@@ -1,0 +1,18 @@
+
+
+
+
+
+	Intrari in tabela
+
+	- tabelele se refera la coloane, intrarile sunt randurile
+	- acestea sunt informatiile efective venite de la aplicatie/utilizator
+	- nu avem control asupra lor, in afara de format si tip de date
+
+	- nu avem control = nu tine de operatorul de baze de date (in acest context)
+
+
+	- in cadrul unei tabele exista o coloana/numar de coloane care reprezinta
+	cheia primara a tabelei
+	- pentru oricare o cheie primara poate exista o singura intrare (important!)
+	- exemplu pe romaneste: exista o singura persoana cu CNP-ul <CNP>
