@@ -1,0 +1,16 @@
+
+
+
+
+
+	Tabele
+
+	- modeleaza efectiv un model de date
+	- trebuie sa contina informatii specifice
+	- daca nu este dat modelul, stati o secunda si ganditi-va la el
+	- se doreste sa aiba toate atributele specifice, dar nu date suplimentare
+	- cand spunem "tabela" ne referim la coloanele sale, nu la datele din acestea
+
+	Revenind la exemplul anterior, fie tabela PERSOANE cu coloanele:
+
+	CNP		Nume		Data de nastere		Localitatea de nastere

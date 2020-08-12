@@ -1,0 +1,22 @@
+
+
+
+
+
+	Obtinerea datelor din tabele
+
+	SELECT column1, column2... FROM table_name;
+
+	sau
+
+	SELECT * FROM table_name;
+
+	Forma lunga:
+
+	SELECT column1...
+	FROM table_name
+	<WHERE  condition1 AND
+		condition2 AND
+		...>
+	<JOIN table2_name ON conditionX>
+	<ORDER BY columnY_name ASC/DESC>;

@@ -1,0 +1,15 @@
+
+
+
+
+
+	Crearea de tabele
+
+	CREATE TABLE TABLE_NAME (
+		column1_name datatype,
+		column2_name datatype,
+		...
+	);
+
+
+	Pentru o lista a datatype-urilor vedeti link-ul din README.md

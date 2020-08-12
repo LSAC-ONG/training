@@ -1,0 +1,16 @@
+
+
+
+
+
+	Baze de date
+
+	= o colectie de date organizata pentru stocare si accesare.
+
+	Acestea se muleaza pe modelul mai multor "obiecte" care doresc sa fie salvate.
+	Un exemplu de obiect poate sa fie o persoana.
+
+	Persoana:	CNP (unic)	Nume	Data nastere	Locatia nasterii
+
+	Atentie!
+	O baza de date nu este determinata doar de un model!

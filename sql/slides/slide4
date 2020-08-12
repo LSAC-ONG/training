@@ -1,0 +1,15 @@
+
+
+
+
+
+	SQL
+
+	- o metoda de a accesa si manipula baze de date
+	- este un standard care are mai multe implementari
+	Printre implementari:
+		- MySQL - topicul de azi
+		- MariaDB (fork de la MySQL)
+		- Microsoft SQL
+		- OracleDB
+		- multe altele
