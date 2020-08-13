@@ -114,6 +114,7 @@ Daca dorim sa sincronizam ce e pe upstream cu ce avem noi local (sa zicem, de ex
 - Obisnuiti-va sa folositi ```git status``` inainte de orice, va poate salva din niste situatii neplacute.
 
 ## Alte resurse:
+- [git cheat sheet](https://www.atlassian.com/git/tutorials/atlassian-git-cheatsheet)
 - [git rebase](https://git-scm.com/docs/git-rebase), o alta modalitate de a combina branch-uri, putin diferita de ce am discutat.
 - [OhShitGit](https://ohshitgit.com/) - cele mai comune greseli pe care le facea lumea cu git si cum se rezolva
 - [Understanding Git](https://hackernoon.com/understanding-git-fcffd87c15a3) - cum functioneaza git in spate
