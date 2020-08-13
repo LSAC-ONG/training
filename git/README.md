@@ -117,5 +117,5 @@ Daca dorim sa sincronizam ce e pe upstream cu ce avem noi local (sa zicem, de ex
 - [git cheat sheet](https://www.atlassian.com/git/tutorials/atlassian-git-cheatsheet)
 - [git rebase](https://git-scm.com/docs/git-rebase), o alta modalitate de a combina branch-uri, putin diferita de ce am discutat.
 - [OhShitGit](https://ohshitgit.com/) - cele mai comune greseli pe care le facea lumea cu git si cum se rezolva
-- [Understanding Git](https://hackernoon.com/understanding-git-fcffd87c15a3) - cum functioneaza git in spate
+- [How does git work internally](https://medium.com/@shalithasuranga/how-does-git-work-internally-7c36dcb1f2cf) - cum functioneaza git in spate
 - [Write yourself a git](https://wyag.thb.lt/) - tutorial cum sa iti scrii propriul git in python in cateva ore.
