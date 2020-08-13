@@ -22,7 +22,7 @@
 5. Conflict - git is fun until you get one of those
 6. Sincronizare upstream -> local
     - ``` git pull ```
-    - ``` git fetch <remote> && git reset --hard <branch> ```
+    - ``` git fetch <remote>``` urmat de ```git reset --hard <branch> ```
     - ``` git merge ``` (nu va fi acoperit in timpul trainingului)
     - ``` git rebase ``` (nu va fi acoperit in timpul trainingului)
 7. Git best practices
@@ -102,7 +102,7 @@ Unele IDE-uri au support automat pentru rezolvare de conflicte (suita Jetbrains,
 ## 6. Sincronizare upstream->local
 Daca dorim sa sincronizam ce e pe upstream cu ce avem noi local (sa zicem, de exemplu, un PR al unui coleg a fost aprobat inainte sa dam noi pull sau clone) avem mai multe optiuni:    
 - ```git pull```: Incearca sa "imbine" versiunea noastra cu cea de pe upstream, si adauga un nou commit cu imbinarea. De obicei o folosim daca avem nevoie de ceva care s-a pus pe upstream intre timp.
-- ```git fetch upstream && git reset --hard upstream/master```
+- ```git fetch upstream``` urmat de ```git reset --hard upstream/master```
     - 2 comenzi: ```git fetch``` care ia ultimele schimbari de pe upstream, si ```git reset``` care pune schimbarile local.
     - **COMANDA PERICULOASA, USE WITH CAUTION**. Pur si simplu va reseteaza branch-ul curent la ce e in acest moment pe branch-ul master de pe upstream (cel de pe github).
     - Aceasta comanda va da discard la ORICE schimbare care nu a fost commited, deci **git status** inainte si verificati ca nu aveti nevoie de ceva de acolo inainte.
