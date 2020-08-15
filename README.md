@@ -1,5 +1,4 @@
 # LSAC Training IT
-
 Bine ai venit pe repo-ul destinat programului de training IT! Pentru a accesa
 resursele, te rugam sa accesezi folderul dedicat fiecarui subiect.
 
