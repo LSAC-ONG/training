@@ -16,3 +16,4 @@ resursele, te rugam sa accesezi folderul dedicat fiecarui subiect.
 - Laravel
 
 ### Participanti:
+Simion Bogdan - Alexandru
