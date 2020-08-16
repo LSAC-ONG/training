@@ -7,11 +7,6 @@ Bootstrap nu necesită instalare. Practic, Bootstrap este o colecție de fișier
 1. Adăugați HTML5 doctype tag
 ```
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-  </head>
-</html>
 ```
 2. Pentru a include biblioteca Bootstrap CSS adăugați următorul link:
 ```
@@ -51,9 +46,9 @@ Pentru că poți dezvolta website-uri mult mai ușor și repede.
 ## Bootstrap Grid = linii + coloane + containere
 
 ### [The Rules of the Grid](https://medium.com/wdstack/how-to-bootstrap-94abe3525442)
-> 1. Columns must be the immediate child of a Row.  
-2. Rows are only used to contain Columns, nothing else.  
-3. Rows should be placed inside a Container.
+> 1. Columns must be the immediate child of a Row.
+> 2. Rows are only used to contain Columns, nothing else.
+> 3. Rows should be placed inside a Container.
 
 ### Linie
 - **grupare de coloane**
@@ -69,7 +64,7 @@ Pentru că poți dezvolta website-uri mult mai ușor și repede.
 - grid-ul clasic Bootstrap are **12 coloane unități**
 - în Bootstrap 4, există opțiunea de "auto-layout" column
 - pot fi folosite mai puțin (sau mai mult) de 12 coloane
-- dacă există mai mult 12 coloane cele rămase vor fi așezate vertical mai jos (**column wrapping**)
+- dacă există mai mult de 12 coloane cele rămase vor fi așezate vertical mai jos (**column wrapping**)
 - lățimea coloanei și "wrapping"-ul sunt controlate folosind **Responsive Grid Tiers (Grid Breakpoints)**
   - **(xs)** - lățimea ecranului < 576px - default tier (col-xs-6 <=> col-6)
   - **sm** - lățimea ecranului >= 576px
@@ -93,4 +88,4 @@ Pentru că poți dezvolta website-uri mult mai ușor și repede.
 - [Articol Medium super detaliat și util](https://medium.com/wdstack/how-to-bootstrap-94abe3525442)
 - [Bootstrap 4 exemple](https://www.codeply.com/bootstrap-4-examples)
 - [Bootstrap 4 cheatsheet](https://hackerthemes.com/bootstrap-cheatsheet/)
-- *** Google *** 
+- ***Google*** 
