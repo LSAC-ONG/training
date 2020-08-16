@@ -25,7 +25,7 @@ In trainingul de bootstrap o sa invatati cum sa va folositi de aceste cunostiile
 In training o sa incepem cu mici explicatii ale anumitor elemente, urmand sa facem o mica pagina unde o sa se vada utilitatea acelor elemente. In timpul trainingului poate veti fi pusi sa stilizati repede anumite parti din pagina. Codul sursa o sa fie lasat pe drive pentru a putea vedea diferenta de cod dintre pure CSS si Bootstrap.
 
 ## Resurse utile:
-	[Codecademy] (https://www.codecademy.com/)
-	[W3School] (https://www.w3schools.com/)
-	StackOverflow
-	GOOGLE
+[Codecademy](https://www.codecademy.com/)
+[W3School](https://www.w3schools.com/)
+StackOverflow
+GOOGLE
