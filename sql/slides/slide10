@@ -1,0 +1,13 @@
+
+
+
+
+
+	Crearea de database-uri
+
+
+		CREATE DATABASE DATABASE_NAME;
+		
+	Pentru a utiliza respectiva baza de date
+		
+		USE DATABASE_NAME;

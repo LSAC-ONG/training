@@ -1,0 +1,14 @@
+
+
+
+
+
+	Stergerea unor intrari:
+	
+	DELETE FROM table_name
+	WHERE 	condition1 AND
+		...;
+
+	Stergerea unei tabele;
+
+	DROP TABLE table_name;

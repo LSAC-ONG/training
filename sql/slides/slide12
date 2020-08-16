@@ -1,0 +1,14 @@
+
+
+
+
+
+	Inserarea datelor intr-o tabela
+
+
+	INSERT INTO table_name (column1, column2...)
+		VALUES (value_column1, value_column2...);
+
+	- este posibil sa inseram date fara sa precizam coloanele explicit,
+	dar NU este recomandat intrucat pot sa apara probleme de compatibilitate
+	daca se fac schimbari asupra coloanelor tabelelor
