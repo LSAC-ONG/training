@@ -8,7 +8,9 @@ Bootstrap nu necesită instalare. Practic, Bootstrap este o colecție de fișier
 ```
 <!DOCTYPE html>
 ```
-2. Pentru a include biblioteca Bootstrap CSS adăugați următorul link:
+2.1. **Folosind BoostrapCDN**
+
+Pentru a include biblioteca Bootstrap CSS adăugați următorul link:
 ```
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
 ```
@@ -18,6 +20,15 @@ Există și o bibliotecă opțională orientată pe partea de JavaScript ce nece
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
 ```
+2.2 **Fără BootstrapCDN**
+
+Descărcați fișierele sursă de pe [Download Bootstrap](https://getbootstrap.com/docs/4.3/getting-started/download/#compiled-css-and-js), secțiunea Compiled CSS and JS. Dezarhivați fișierul .zip pe care l-ați descărcat și o să aveți 2 foldere (css & js). Puteți să le adăugați într-un alt folder bootstrap și să includeți în fișier următoarele linii:
+```
+<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+<script src='bootstrap/js/bootstrap.min.js'></script>
+```
+jQuery și Popper.js nu sunt incluse în arhivă și trebuie adăugate separat ca mai sus.
+
 3. Adăugați tag-ul meta pentru a asigura **proper rendering** și **touch zooming**:
 ```
 <meta name="viewport" content="width=device-width, initial-scale=1">
