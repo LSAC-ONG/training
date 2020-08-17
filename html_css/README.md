@@ -3,7 +3,7 @@
 
 ## De ce aveti nevoie?
 
-- In principiu de un text editor (orice doriti voi : Sublimte text 3, visual studio code, etc ) si de dorinta de a invata.
+- In principiu de un text editor (orice doriti voi : Sublime text 3, visual studio code, etc ) si de dorinta de a invata.
 
 ## Motivatie
 
@@ -18,8 +18,15 @@ In trainingul de bootstrap o sa invatati cum sa va folositi de aceste cunostiile
 ## Cum o sa se desfasoare training-ul si care sunt subiectele:
 
 - **Introducere** => De ce sa invat HTML si CSS? La ce sunt utile? Ce pot face cu ele?
-- **HTML** => Prima pagina in html, elementele importante(head, body, div, button, etc) , cum sa faci un form, style attribute.
-- **CSS** => Cum sa folosesti CSS in head, in fisier diferit. Cum sa stilizezi pagina si elementele, pozitionarea elementelor, folosirea procentelor in loc de valori fixe,  Inspect Element (Best debugger for styling), @media.
+- **HTML** => Prima pagina in HTML, elementele importante(head, body, div, button, etc) , cum sa faci un form, style attribute.
+		   => Descrierea fiecarul element important si la ce foloseste
+		   => Creearea unei pagini de inceput
+- **CSS** => Cum sa folosesti CSS in head, in fisier diferit. Cum sa stilizezi pagina si elementele, pozitionarea elementelor, folosirea procentelor in 			 loc de valori fixe,  Inspect Element (Best debugger for styling), @media.
+		  => Adaugarea link-urilor pentru css extern
+		  => Stilizarea paginii facute doar in HTML
+		  => Exercitiu : Creearea de elemente din pagina
+
+La final ar trebui sa avem o pagina html care sa arate bine pe desktop, cat si pe telefon si tableta.
 
 ## Ce o sa facem in training?
 In training o sa incepem cu mici explicatii ale anumitor elemente, urmand sa facem o mica pagina unde o sa se vada utilitatea acelor elemente. In timpul trainingului poate veti fi pusi sa stilizati repede anumite parti din pagina. Codul sursa o sa fie lasat pe drive pentru a putea vedea diferenta de cod dintre pure CSS si Bootstrap.
