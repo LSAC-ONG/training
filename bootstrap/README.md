@@ -56,6 +56,8 @@ Pentru că poți dezvolta website-uri mult mai ușor și repede.
 
 ## Bootstrap Grid = linii + coloane + containere
 
+![Bootstrap Grid](https://miro.medium.com/max/2342/1*6frm0pq5VjPcc71EqH7cKw.png)
+
 ### [The Rules of the Grid](https://medium.com/wdstack/how-to-bootstrap-94abe3525442)
 > 1. Columns must be the immediate child of a Row.
 > 2. Rows are only used to contain Columns, nothing else.
