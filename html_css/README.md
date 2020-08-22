@@ -36,3 +36,7 @@ In training o sa incepem cu mici explicatii ale anumitor elemente, urmand sa fac
 [W3School](https://www.w3schools.com/)
 StackOverflow
 GOOGLE
+
+## Tema
+[Aici](https://www.figma.com/file/Fe73G0Q9NPG40zU32EvNxp/Interviu-IT?node-id=0%3A1) - In care mai adaugati un tabel si un selling card cu orice produs vreti si ca design las frau liber imaginatiei :))
+Am adaugat 2 arhive, una cu training-ul si una cu raspunsul la tema( Stiu ca am zis ca am facut-o in pure css, dar se pare ca am folosit si bootstrap, dar sper sa fie usefull).
