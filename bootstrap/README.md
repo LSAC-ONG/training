@@ -52,7 +52,7 @@ Pentru că poți dezvolta website-uri mult mai ușor și repede.
 ## Program training
 1. Introducere Bootstrap + utilitate 
 2. Explicații Bootstrap Grid (scurt rezumat mai jos)
-3. Exemple Bootstrap (content, componente, grid, etc.) - codul o să fie încărcat după training
+3. Exemple Bootstrap (content, componente, grid, etc.)
 
 ## Bootstrap Grid = linii + coloane + containere
 
@@ -94,6 +94,11 @@ Pentru că poți dezvolta website-uri mult mai ușor și repede.
   2. Full-width ("container-fluid")
 - orice container poate conține mai multe linii
 - o pagină poate să conțină mai multe containere
+
+## Resurse
+Am adăugat și un folder de resurse ce conține
+- codul dezvoltat în cadrul trainingului de HTML + CSS adaptat pentru a include componente și alte opțiuni specifice Bootstrap
+- container cu mai multe linii și coloane de dimensiuni diferite drept exemplu pentru Bootstrap Grid
 
 ## Resurse extra
 - [Bootstrap Documentation](https://getbootstrap.com/docs/4.0/getting-started/introduction/)
