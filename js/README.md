@@ -39,7 +39,7 @@ Codul JavaScript trebuie inclus intr-o pagina html prin tag-ul ```<script>```. A
 
 Apasati F12 si duceti-va la tabul de console. Consola e echivalentul terminalului in care ati rula un cod C. Ca sa scriem in consola, putem folosi:
 
-```
+```js
 console.log('Hello World');
 console.error('This is an error');
 console.warn('This is a warning');
@@ -51,13 +51,13 @@ Javascript e un limbaj **WEAKLY TYPED**, spre deosebire de limbaje mai restricti
 
 Variabilele se declara folosind keyword-urile ```const``` si ```let```. (exista si ```var``` dar [nu este deloc recomandat](https://discuss.codecademy.com/t/whats-wrong-with-var/224975) sa il folositi, e mai mult tinut pentru backwards compatibility).
 
-```
+```js
 const age = 30;
 
 age = 15; // error: can't reassign const
 ```
 
-```
+```js
 let age = 30;
 
 age = 15; // Ok
@@ -66,7 +66,7 @@ age = 15; // Ok
 ## Tipuri de date
 Stai.. mai sus scrie ca javascript e weakly typed? Cum adica tipuri de date? Da, JS e weakly typed, dar tot are o reprezentare interna a variabilelor, singura diferenta e ca nu depinde de utilizator sa specifice tipul explicit.
 
-```
+```js
 const name = 'Mihai Lupea';
 const age = 37;
 const rating = 3.5;
@@ -80,7 +80,7 @@ let z; // undefined
 
 JavaScript are o multitudine de functii ajutatoare pentru string-uri, si este bine sa va obisnuiti sa le cautati si sa le folositi.
 
-```
+```js
 const s = 'Hello World';
 let val;
 
@@ -106,7 +106,7 @@ val = s.split(''); // ["Hello", "World"]
 
 Este un tip de date care este foarte folosit si e asemanator cu cel din limbajele standard.
 
-```
+```js
 // ARRAYS - Store multiple values in a variable
 const numbers = [1,2,3,4,5];
 const fruits = ['apples', 'oranges', 'pears', 'grapes'];
@@ -135,7 +135,7 @@ console.log(fruits.indexOf('oranges'));
 
 Obiectele reprezinta o modalitate foarte populara de a organiza datele (exista o intreaga paradigma in jurul lor, se invata in anul 2 la materia POO). Acestea sunt prezente si in JS, ba chiar mai mult, au definit un standard international de comunicare intre servicii: [JSON](https://en.wikipedia.org/wiki/JSON).
 
-```
+```js
 const person = {
   firstName: 'John',
   age: 30,
@@ -162,7 +162,7 @@ person.email = 'jdoe@gmail.com';
 
 ## Conditionals
 - If
-    ```
+    ```js
     const x = 30;
 
     if(x === 10) {
@@ -174,7 +174,7 @@ person.email = 'jdoe@gmail.com';
     }
     ```
 - Switch
-    ```
+    ```js
     color = 'blue';
 
     switch(color) {
@@ -187,7 +187,7 @@ person.email = 'jdoe@gmail.com';
     }
     ```
 - Ternary Operator (shorthand if)
-    ```
+    ```js
     const z = color === 'red' ? 10 : 20;
     ```
 
@@ -197,13 +197,13 @@ person.email = 'jdoe@gmail.com';
 
 ## Loops
 - For
-    ```
+    ```js
     for(let i = 0; i <= 10; i++){
     console.log(`For Loop Number: ${i}`);
     }
     ```
 - While
-    ```
+    ```js
     let i = 0
     while(i <= 10) {
         console.log(`While Loop Number: ${i}`);
@@ -211,7 +211,7 @@ person.email = 'jdoe@gmail.com';
     }
     ```
 - Parcurgeri
-    ```
+    ```js
     for(let i = 0; i < arr.length; i++){
         console.log(arr[i]);
     }
@@ -223,7 +223,7 @@ person.email = 'jdoe@gmail.com';
     ```
 
 ## Functii
-```
+```js
 function greet(name) {
     return `Hello, ${name}!`;
 }
@@ -239,7 +239,7 @@ De obicei destul de uzuale cand lucram cu array-uri, ele deriva din Programarea 
 - ```arr.map(func)``` -> apeleaza func pe toate elementele array-ului si construieste un array de aceeasi dimensiune cu rezultatele
 - ```arr.filter(func)``` -> apeleaza func pe toate elementele si returneaza o lista doar cu elementele unde func a returnat true
 
-```
+```js
 const todos = [
   {
     id: 1,
