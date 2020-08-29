@@ -330,6 +330,6 @@ O lista a celor mai uzuale este:
 - ```window.onload``` -> functia ce este apelata in momentul in care pagina s-a incarcat complet.
 
 ## Resurse
-[MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
-[w3schools.com](https://www.w3schools.com/js/)
-[JavaScript Tutorials](https://javascript.info)
+- [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+- [w3schools.com](https://www.w3schools.com/js/)
+- [JavaScript Tutorials](https://javascript.info)
