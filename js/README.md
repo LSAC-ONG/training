@@ -21,7 +21,7 @@ Este metoda principala folosita pentru a crea pagini dinamice pe partea de clien
 
 Codul JavaScript trebuie inclus intr-o pagina html prin tag-ul ```<script>```. Acesta poate fi folosit in 2 moduri:
 - Inline (de preferat la finalul paginii, ca sa nu se ingreuneze incarcarea)
-    ``` 
+    ```
     <script>
         alert('Hello World');
     </script>
@@ -233,8 +233,19 @@ console.log(greet("Mihai"));
 
 Interesting topic: [Javascript Closures](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures).
 
+## Functii anonime
+O functie este anonima daca nu are asociat un nume.
+```js
+const myFunc = function() {
+  console.log('anonymous');
+}
+
+// 'anonymous'
+myFunc();
+```
+
 ## High Order Array Functions
-De obicei destul de uzuale cand lucram cu array-uri, ele deriva din Programarea Functionala, o alta paradigma (JS e un limbaj multi-paradigm).
+De obicei destul de uzuale cand lucram cu array-uri, ele deriva din Programarea Functionala, o alta paradigma.
 - ```arr.forEach(func)``` -> apeleaza func pe toate elementele array-ului
 - ```arr.map(func)``` -> apeleaza func pe toate elementele array-ului si construieste un array de aceeasi dimensiune cu rezultatele
 - ```arr.filter(func)``` -> apeleaza func pe toate elementele si returneaza o lista doar cu elementele unde func a returnat true
@@ -264,7 +275,7 @@ const todoTextArray = todos.map(function(todo) {
 
 const todo1 = todos.filter(function(todo) {
   // Return only todos where id is 1
-  return todo.id === 1; 
+  return todo.id === 1;
 });
 ```
 
@@ -272,4 +283,48 @@ const todo1 = todos.filter(function(todo) {
 
 DOM = Document Object Model. Pe romaneste, cum manipulam elementele din pagina.
 
-TODO
+Pentru orice pagina se creeaza un DOM ce poate fi folosit pentru a schimba elemente de structura, styling sau continut.
+
+![HTML DOM](https://www.w3schools.com/js/pic_htmltree.gif)
+
+Orice element din pagina este parte a DOM-ului asociat acelei paginii si poate fi modificat cu ajutorul unui limbaj de scripting precum JavaScript.
+
+# Metode
+O metoda este o actiune ce poate fi efectuata asupra unui element (ex: stergerea/adaugarea unui element).
+
+```js
+document.getElementById('demo')
+```
+
+getElementById este o metoda ce va identifica si intoarce elementul din pagina cu ID-ul specificat ('demo').
+
+# Proprietati
+O proprietate este o valoare care poate fi accesata sau modificata.
+
+```js
+document.getElementById('demo').innerHTML
+```
+
+innerHTML este o proprietate ce acceseaza continutul (HTML) al unui element.
+
+Putem modifica continutul elementului cu ID-ul 'demo' in modul urmator:
+
+```js
+document.getElementById('demo').innerHTML = 'new-content'
+```
+
+Exista foarte multe metode si proprietati specifice DOM-ului.
+
+O lista a celor mai uzuale este:
+
+- ```document.getElementById(someId)``` -> intoarce elementul cu id-ul egal cu someId.
+- ```document.getElementsByTagName(tagName)``` - intoarce o colectie de elemente ce au tag-ul name.
+- ```document.getElementsByClassName(className)``` -> intoarce un array cu toate elementele ce au clasa className.
+- ```document.createElement(tagName)``` -> creeaza un element HTML cu tag-ul tagName.
+- ```parentNode.appendChild(node)``` -> ataseaza nodul primit la finalul listei de copii a nodului parinte.
+- ```element.innerHTML``` -> continutul elementului.
+- ```element.style.``` -> toate proprietatile de style ale elementului.
+- ```element.setAttribute(name, value)``` -> seteaza valoarea atributului name la value.
+- ```element.getAttribute(name)``` -> intoarce valoarea atributului name.
+- ```element.addEventListener(event, function)``` -> apeleaza functia function de fiecare data cand se intampla evenimentul event.
+- ```window.onload``` -> functia ce este apelata in momentul in care pagina s-a incarcat complet.
