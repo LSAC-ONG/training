@@ -328,3 +328,8 @@ O lista a celor mai uzuale este:
 - ```element.getAttribute(name)``` -> intoarce valoarea atributului name.
 - ```element.addEventListener(event, function)``` -> apeleaza functia function de fiecare data cand se intampla evenimentul event.
 - ```window.onload``` -> functia ce este apelata in momentul in care pagina s-a incarcat complet.
+
+## Resurse
+[MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+[w3schools.com](https://www.w3schools.com/js/)
+[JavaScript Tutorials](https://javascript.info)
