@@ -329,6 +329,39 @@ O lista a celor mai uzuale este:
 - ```element.addEventListener(event, function)``` -> apeleaza functia function de fiecare data cand se intampla evenimentul event.
 - ```window.onload``` -> functia ce este apelata in momentul in care pagina s-a incarcat complet.
 
+**Nice to know**
+Functiile getElementById(), getElementsByTagName() si getElementsByClassName() nu mai sunt recomandate. In locul lor au fost introduse functiile [querySelector()](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector) si [querySelectorAll()](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelectorAll).
+
+- ```querySelector(selectors)``` -> intoarce primul element din document care se potriveste cu selectors.
+- ```querySelectorAll(selectors)``` -> intoarce lista tuturor elementelor care se potrivesc cu selectors.
+
+### Exemple
+
+1. Primul element cu un anumit tag
+```js
+querySelector('tagName')
+```
+
+Toate elementele cu un anumit tag
+```js
+querySelectorAll('tagName')
+```
+
+2. Primul element cu o anumita clasa
+```js
+querySelector('.className')
+```
+
+Toate elementele cu o anumita clasa
+```js
+querySelectorAll('.className')
+```
+
+3. Elementul cu un anumit id
+```js
+querySelector('#idName')
+```
+
 ## Resurse
 - [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 - [w3schools.com](https://www.w3schools.com/js/)
