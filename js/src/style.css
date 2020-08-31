@@ -75,3 +75,8 @@ header {
   padding: 5px;
   margin: 5px;
 }
+
+.user {
+  color: white;
+  background-color: blue;
+}
