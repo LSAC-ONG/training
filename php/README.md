@@ -22,3 +22,9 @@ CREATE TABLE users (
     created_at DATETIME DEFAULT CURRENT_TIMESTAMP
 );
 ```
+
+## After training
+
+- Am adaugat codul pentru cat am putut parcurge. Ca tema, ar ramane urmatoarele:
+    - Login: adaugare in modelul de user a unei functii de extragere a unui utilizator, logica in logincontroller cu validare, popularea sesiunii si redirect la home.php. daca userul deja e logat si incearca sa intre pe login.php, ar trebui sa i se dea redirect la home.php.
+    - Register: verificare ca userul deja exista in DB si afisarea unui mesaj de eroare corespunzator in acest caz
