@@ -12,3 +12,13 @@
 Acesta va fi un training mai hands-on fata de celalalte. Va rugam sa fiti atenti in timpul lui si eventual sa va uitati la inregistrari. PHP e un limbaj mai complex fata de cele pe care le-am facut pana acum si ar lua mult timp sa explicam fiecare chestie intr-un README. Consideram ca cel mai bine veti invata lucrand si aplicand in practica ce ati vazut pana acum la traininguri.
 
 Vom trece prin cea mai clasica aplicatie de PHP: login/register. Veti intelege cum functioneaza un server, ce e un request si un response, cum putem persista date intre pagini, si multe alte challenge-uri pe care le veti intalni in viata de zi cu zi ca programator. Multe lucruri prezentate aici nu sunt specifice doar PHP, acesta fiind unul din multele limbaje care pot rezolva astfel de probleme.
+
+Query pentru tabelul de useri:
+```sql
+CREATE TABLE users (
+    id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    username VARCHAR(50) NOT NULL UNIQUE,
+    password VARCHAR(255) NOT NULL,
+    created_at DATETIME DEFAULT CURRENT_TIMESTAMP
+);
+```
