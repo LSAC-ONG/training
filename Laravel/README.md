@@ -4,7 +4,7 @@
 
 - Aveti nevoie de un editor de texte ( recomand PHPStorm - moca pentru studenti) si de urmatorul setup: [Setup](https://laracasts.com/series/laravel-6-from-scratch/episodes/2)
 
-- Urmariti videoclipul 2 si 3 pentru setup ( si 4 daca aveti MAC, desii nu e prea usefull :)))
+- Urmariti videoclipul 2 si 3 pentru setup ( si 4 daca aveti MAC, desiiiii nu e prea usefull :)))
 - In principal aveti nevoie de Composer (MySQL si PHP aveti deja instalate daca ati fost la celalalte training-uri) si de laravel.
 
 ## Motivatie
