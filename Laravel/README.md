@@ -9,7 +9,7 @@
 
 ## Motivatie
 
-Laravel este unul dintre cele mai folosite framework-uri web de PHP si este de tip MVP (Model - View - Controller). Acesta a evoluat foarte mult in ultimii ani, ajungand in prezent la versiunea 8. 
+Laravel este unul dintre cele mai folosite framework-uri web de PHP si este de tip MVC (Model - View - Controller). Acesta a evoluat foarte mult in ultimii ani, ajungand in prezent la versiunea 8. 
 
 [Mai multe detalii](https://www.endivesoftware.com/blog/why-choose-laravel-framework-for-web-development/)
 
@@ -19,9 +19,10 @@ Laravel este unul dintre cele mai folosite framework-uri web de PHP si este de t
 - Routing
 - Views
 - Database
+- Models
 - Forms ( with POST and CSRF)
 - Controllers
-- Models and Eloquent
+- Eloquent
 
 
 ## Resurse utile:
