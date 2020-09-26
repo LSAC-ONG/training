@@ -24,6 +24,7 @@ Laravel este unul dintre cele mai folosite framework-uri web de PHP si este de t
 - Controllers
 - Eloquent
 
+
 ##Ramas neacoperit dupa 2 ore de training:
 - Templates in blade
 - update / delete forms for posts
