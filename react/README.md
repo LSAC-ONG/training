@@ -23,27 +23,27 @@ sudo apt install npm
 
 
 ## Ce este React?
-Library ([library vs framework](https://www.freecodecamp.org/news/the-difference-between-a-framework-and-a-library-bd133054023f/#:~:text=The%20technical%20difference%20between%20a,in%20charge%20of%20the%20flow.)) for building user interfeces.
+**Library** ([library vs framework](https://www.freecodecamp.org/news/the-difference-between-a-framework-and-a-library-bd133054023f/#:~:text=The%20technical%20difference%20between%20a,in%20charge%20of%20the%20flow.)) for building **user interfeces**.
 
 
 ## Why React?
-- virtual DOM
+- **virtual DOM**
   - reprezentarea în memorie a UI-ului folosit
   - virtual DOM-ul este sincronizat cu DOM-ul real prin ReactDOM (reconciliation)
 - update-uri reactive
   - când se modifică ceva React va compara reprezentarea internă cu ceea ce a primit și va actualiza numai acele componente care s-au modificat
-  - din acest motiv, timpul de încărcare este mult mai mic
-- pretty fast learning curve
+  - din acest motiv, _timpul de încărcare este mult mai mic_
+- **pretty fast learning curve**
   - React este o librărie și este mai ușor de învățat decât un framework (ex: Angular)
-- React Native
-  - același cod pentru mai multe platforme (iOS, Android)
-- JSX
+- **React Native**
+  - **același cod pentru mai multe platforme** (iOS, Android)
+- **JSX**
   - extensie JavaScript care permite crearea declarativă a componentelor
   - separarea componentelor după logică și nu după limbajele de programare (HTML, CSS, JavaScript)
-- dezvoltare pe bază de componente
+- dezvoltare pe bază de **componente**
   - simplificând, componentele sunt niște functii care pe baza unui input(props + state) returnează un output(JSX)
-  - componentele pot fi reutilizate pentru a crea alte componente
-- unidirectional data binding
+  - componentele pot fi **reutilizate** pentru a crea alte componente
+- **unidirectional data binding**
   - fiecare componentă poate avea o stare
   - această stare poate fi trimisă mai departe copiilor, dar nu și invers
   - exemplu: toate butoanele unui formular pot să aibă aceeași culoare
@@ -114,9 +114,9 @@ Library ([library vs framework](https://www.freecodecamp.org/news/the-difference
 ### Componente
 - componentă = secvență de cod independentă ce poate fi reutilizată
 - se împarte UI în componente mai mici care vor fi compuse pentru a crea componente din ce în ce mai complexe
-- componentele definite trebuie să fie obligatoriu capitalized (React presupune că toate componentele care încep cu literă mică sunt componente built-in)
+- componentele definite trebuie să fie obligatoriu **capitalized** (React presupune că toate componentele care încep cu literă mică sunt componente built-in)
 - functional & class components
-  1. Functional components = funcție JavaScript care întoarce un element React (JSX)
+  1. **Functional components** = funcție JavaScript care întoarce un element React (JSX)
        ```
        function BasicParagraph(props) {
 	 	  return <p> Hi there, {props.name} </h1>;
@@ -135,7 +135,7 @@ Library ([library vs framework](https://www.freecodecamp.org/news/the-difference
       ```
   - poate avea props sau nu (vedem imediat ce sunt props)
 
-  2. Class components = ES6 classes that return JSX
+  2. **Class components** = ES6 classes that return JSX
        ```
        class BasicParagraph extends React.Component {
 	       render() {
@@ -144,9 +144,9 @@ Library ([library vs framework](https://www.freecodecamp.org/news/the-difference
   	   }
        ```
   - import/export exact ca la functional components
-  - funcția render este obligatorie
-  - putem adăuga și stare sau lifecycle methods (vedem imediat ce mai sunt și astea)
-- pentru a crea un element în React vom folosi funcția React.createElement(component, props, ...children)
+  - funcția render este **obligatorie**
+  - putem adăuga și stare sau **lifecycle methods** (vedem imediat ce mai sunt și astea)
+- pentru a crea un element în React vom folosi funcția **React.createElement(component, props, ...children)**
   - exemplu: pentru a crea <div className="whatever" /> putem folosi
       ```
       React.createElement(
@@ -169,11 +169,11 @@ Library ([library vs framework](https://www.freecodecamp.org/news/the-difference
 	    React
     </MyButton>
     ```
-- notația de mai sus e un syntactic sugar pentru React.createElement și cele două apeluri sunt echivalente
+- notația de mai sus e un **syntactic sugar** pentru React.createElement și cele două apeluri sunt echivalente
 
 
 ### Props (properties)
-- one-way flow (date trimise de la un părinte la copii)
+- **one-way flow** (date trimise de la un părinte la copii)
 - pot fi date sub forma de expresii valide JavaScript între {}
   - ex: ```<Number value={1 - 2}>```
 - toate argumentele primite sunt transmise ca un singur obiect
@@ -192,8 +192,8 @@ Library ([library vs framework](https://www.freecodecamp.org/news/the-difference
 		  );
   	  }
       ```
-- toate componentele trebuie să fie funcții pure în raport cu proprietățile primite (funcții pure = nu schimbă datele de intrare și mereu întorc același rezultat pentru aceleași date de intrare)
-- props sunt read only și nu pot fi modificate
+- toate componentele trebuie să fie **funcții pure** în raport cu proprietățile primite (funcții pure = nu schimbă datele de intrare și mereu întorc același rezultat pentru aceleași date de intrare)
+- props sunt **read only** și nu pot fi modificate
 - pentru a le modifica valoarea putem folosi starea
 
 
@@ -208,13 +208,13 @@ Library ([library vs framework](https://www.freecodecamp.org/news/the-difference
 	    };
     }
     ```
-- apelul constructorului de bază super(props) este obligatoriu
-- state nu poate fi modificat direct ci numai folosind setState(state poate fi asignat direct numai în constructor)
+- apelul constructorului de bază super(props) este **obligatoriu**
+- state nu poate fi modificat direct ci numai folosind **setState**(state poate fi asignat direct numai în constructor)
   - ex:
   nope ```this.state.comment = "blabla";```
   yep ```this.setState({comment: "yolo"});```
-- apelurile setState pot fi asincrone
-  - pentru a actualiza corect value folosim o funcție cu 2 parametri (state, props) în care state și props au valorile de la momentul în care se face efectiv update-ul
+- **apelurile setState pot fi asincrone**
+  - pentru a actualiza corect value folosim o funcție cu 2 parametri (state, props) în care state și props au **valorile de la momentul în care se face efectiv update-ul**
   - ex:
     nope
       ```
@@ -228,8 +228,8 @@ Library ([library vs framework](https://www.freecodecamp.org/news/the-difference
 	    counter: state.counter + props.increment
       }));
       ```
-- starea unei componente poate fi trimisă mai departe ca props către alte componente (unidirectional data flow)
-- starea este încapsulată (în afara componentei accesul este limitat la starea care a fost share-uită de componentă)
+- starea unei componente poate fi trimisă mai departe ca props către alte componente (**unidirectional data flow**)
+- starea este **încapsulată** (în afara componentei accesul este limitat la starea care a fost share-uită de componentă)
 
 
 ### Lifecycle methods
@@ -239,7 +239,7 @@ Library ([library vs framework](https://www.freecodecamp.org/news/the-difference
 
 
 ### Rendering elements
-- cum includ o componentă React în HTML? folosind ReactDOM.render
+- cum includ o componentă React în HTML? folosind **ReactDOM.render**
 - ex:
   HTML
     ```
@@ -253,7 +253,7 @@ Library ([library vs framework](https://www.freecodecamp.org/news/the-difference
 
 
 ### Handling events
-- pot include evenimente doar că acestea vor fi definite ca funcții și nu ca apeluri de funcții
+- pot include evenimente doar că acestea vor fi definite ca **funcții și nu ca apeluri de funcții**
 - ex: dacă pentru HTML aș fi scris
     ```
     <button onclick="doSomething()">
@@ -266,7 +266,7 @@ Library ([library vs framework](https://www.freecodecamp.org/news/the-difference
 		do it
     </button>
     ```
-- common pattern: event handlers definite ca metode ale clasei
+- common pattern: **event handlers definite ca metode ale clasei**
   - metodele claselor in JavaScript nu sunt [bound](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_objects/Function/bind) by default
 
 
