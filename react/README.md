@@ -9,17 +9,17 @@ Pentru a folosi React trebuie să aveți [Node.js](https://nodejs.org/en/) și [
 1. Windows
 - [download Node.js](https://nodejs.org/en/download/)
 - după instalare în command prompt:
-	```
-	node -v
-	npm -v
-	```
+    ```
+    node -v
+    npm -v
+    ```
 - ar trebui să afișeze o versiune node >= 8.10 și npm >= 5.6
 
 2. Linux
-```
-sudo apt install nodejs
-sudo apt install npm
-```
+  ```
+  sudo apt install nodejs
+  sudo apt install npm
+  ```
 
 
 ## Ce este React?
@@ -49,7 +49,7 @@ sudo apt install npm
   - exemplu: toate butoanele unui formular pot să aibă aceeași culoare
       ```
       class Form extends Component {
-      	  constructor(props) {
+        constructor(props) {
           super(props);
           this.state = {
               background: "bg-light"
@@ -63,7 +63,7 @@ sudo apt install npm
               </div>
           );
       }
-	  ```
+      ```
 
 
 ## Create React App
@@ -75,7 +75,7 @@ sudo apt install npm
 
 ## Structura unui proiect
 ![Project structure](https://csharpcorner.azureedge.net/article/folder-structure-of-react-application/Images/Folder%20Structure%20of%20React.png)
-	
+    
 - public/index.html = page template
 - src/index.js = JavaScript entry point
 - src = source code
@@ -98,10 +98,10 @@ sudo apt install npm
     ```
     const lonely = <div></div>;
     const notSoLonely = (
-	    <div>
-		    <h1> Hello </h1>
-		    <h2> Bye </h2>
-	    </div>
+        <div>
+            <h1> Hello </h1>
+            <h2> Bye </h2>
+        </div>
     );
     ```
 - dacă tag-ul este empty atunci poate fi închis imediat: ```<div></div>``` echivalent cu ```<div />```
@@ -119,14 +119,11 @@ sudo apt install npm
   1. **Functional components** = funcție JavaScript care întoarce un element React (JSX)
        ```
        function BasicParagraph(props) {
-	 	  return <p> Hi there, {props.name} </h1>;
+           return <p> Hi there, {props.name} </h1>;
        }
        ```
   - componenta trebuie exportată pentru a putea fi folosită în alt fișier
       ```
-      function BasicParagraph(props) {
-		  return <p> Hi there, {props.name} </h1>;
-      }
       export default BasicParagraph;
       ```
   - componenta trebuie mai apoi importată în fișierul în care vrem să o folosim
@@ -138,35 +135,35 @@ sudo apt install npm
   2. **Class components** = ES6 classes that return JSX
        ```
        class BasicParagraph extends React.Component {
-	       render() {
-		       return <p> Hi there, {props.name} </h1>;
-		   }
-  	   }
+           render() {
+               return <p> Hi there, {props.name} </h1>;
+           }
+         }
        ```
   - import/export exact ca la functional components
   - funcția render este **obligatorie**
   - putem adăuga și stare sau **lifecycle methods** (vedem imediat ce mai sunt și astea)
 - pentru a crea un element în React vom folosi funcția **React.createElement(component, props, ...children)**
-  - exemplu: pentru a crea <div className="whatever" /> putem folosi
+  - exemplu: pentru a crea ```<div className="whatever" />``` putem folosi
       ```
       React.createElement(
-    	  'div',
-    	  {className: 'whatever'}
+          'div',
+          {className: 'whatever'}
       )
       ```
 - este la fel și pentru componentele definite de noi
   - exemplu: avem un button custom care va avea culoarea albastru și textul React
       ```
       React.createElement(
-    	  'MyButton',
-    	  {color: 'blue'},
-		  'React'
+          'MyButton',
+          {color: 'blue'},
+          'React'
       )
       ```
 - și mai simplu putem crea elementul direct fără a mai folosi React.createElement
     ```
     <MyButton color="blue">
-	    React
+        React
     </MyButton>
     ```
 - notația de mai sus e un **syntactic sugar** pentru React.createElement și cele două apeluri sunt echivalente
@@ -180,17 +177,17 @@ sudo apt install npm
   - ex:
       ```
       function MyButton(props) {
-    	  return (
-        	  <button className={props.background}>
-            	  {props.text}
-        	  </button>
-    	  );
+          return (
+              <button className={props.background}>
+                  {props.text}
+              </button>
+          );
       }
       function Wrapper() {
-    	  return (
-			  <MyButton background="bg-dark" text="first button"/>
-		  );
-  	  }
+          return (
+              <MyButton background="bg-dark" text="first button"/>
+          );
+        }
       ```
 - toate componentele trebuie să fie **funcții pure** în raport cu proprietățile primite (funcții pure = nu schimbă datele de intrare și mereu întorc același rezultat pentru aceleași date de intrare)
 - props sunt **read only** și nu pot fi modificate
@@ -202,10 +199,10 @@ sudo apt install npm
 - pentru clase vom adăuga un constructor în care inițializăm starea:
     ```
     constructor(props) {
-	    super(props);
-	    this.state = {
-		    // key: value pairs
-	    };
+        super(props);
+        this.state = {
+            // key: value pairs
+        };
     }
     ```
 - apelul constructorului de bază super(props) este **obligatoriu**
@@ -219,13 +216,13 @@ sudo apt install npm
     nope
       ```
       this.setState({
-		  counter: this.state.counter + this.props.increment,
+          counter: this.state.counter + this.props.increment,
       });
       ```
     yep
       ```
       this.setState((state, props) => ({
-	    counter: state.counter + props.increment
+        counter: state.counter + props.increment
       }));
       ```
 - starea unei componente poate fi trimisă mai departe ca props către alte componente (**unidirectional data flow**)
@@ -257,13 +254,13 @@ sudo apt install npm
 - ex: dacă pentru HTML aș fi scris
     ```
     <button onclick="doSomething()">
-		do it
+        do it
     </button>
     ```
   în React devine
     ```
     <button onClick={doSomething}>
-		do it
+        do it
     </button>
     ```
 - common pattern: **event handlers definite ca metode ale clasei**
@@ -274,12 +271,12 @@ sudo apt install npm
 - poate fi folosită atunci când vrem să întoarcem un element numai dacă o condiție este adevărată sau nu
     ```
     function BasicParagraph(props) {
-    	return (
-      		<div>
-        		{props.text.length > 0 && <p>{props.text}</p>}
-      		</div>
-    	);
-  	}
+        return (
+              <div>
+                {props.text.length > 0 && <p>{props.text}</p>}
+              </div>
+        );
+      }
     ```
 - true && expression = expression
 - false && expression = false
@@ -291,12 +288,12 @@ sudo apt install npm
 - ex:
     ```
     function BasicParagraph(props) {
-    	return (
-      		<div>
-        		{props.text.length > 0 ? <p>Empty paragraph</p> : <p>{props.text}</p>}
-      		</div>
-    	);
-  	}
+        return (
+              <div>
+                {props.text.length > 0 ? <p>Empty paragraph</p> : <p>{props.text}</p>}
+              </div>
+        );
+      }
     ```
 
 
@@ -306,72 +303,72 @@ sudo apt install npm
 - ex:
     ```
     class TextForm extends React.Component {
-    	constructor(props) {
-      		super(props);
-      		this.state = {
-				text: ''
-			};
-    		this.handleChange = this.handleChange.bind(this);
-    		this.handleSubmit = this.handleSubmit.bind(this);
-  		}
+        constructor(props) {
+              super(props);
+              this.state = {
+                text: ''
+            };
+            this.handleChange = this.handleChange.bind(this);
+            this.handleSubmit = this.handleSubmit.bind(this);
+          }
 
-  		handleChange(event) {
-    		this.setState({
-				text: event.target.value
-			});
-  		}
+          handleChange(event) {
+            this.setState({
+                text: event.target.value
+            });
+          }
 
-  		handleSubmit(event) {
-    		alert('The text submitted was ' + this.state.text);
-    		event.preventDefault();
-  		}
+          handleSubmit(event) {
+            alert('The text submitted was ' + this.state.text);
+            event.preventDefault();
+          }
 
-  		render() {
-    		return (
-      			<form onSubmit={this.handleSubmit}>
-        			<input type="text" value={this.state.text} onChange={this.handleChange} />
-        			<input type="submit" value="Submit" />
-      			</form>
-    		);
-  		}
-	}
-	```
+          render() {
+            return (
+                  <form onSubmit={this.handleSubmit}>
+                    <input type="text" value={this.state.text} onChange={this.handleChange} />
+                    <input type="submit" value="Submit" />
+                  </form>
+            );
+          }
+    }
+    ```
 - putem adăuga un nume pentru a diferenția input-urile în cazul în care sunt mai multe
 - ex:
     ```
-	class TextForm extends React.Component {
-  		constructor(props) {
-    		super(props);
-    		this.state = {
-				author: ''
-				text: ''
-			};
-    		this.handleChange = this.handleChange.bind(this);
-    		this.handleSubmit = this.handleSubmit.bind(this);
-  		}
+    class TextForm extends React.Component {
+          constructor(props) {
+            super(props);
+            this.state = {
+                author: ''
+                text: ''
+            };
+            this.handleChange = this.handleChange.bind(this);
+            this.handleSubmit = this.handleSubmit.bind(this);
+          }
 
-  		handleChange(event) {
-    		this.setState({
-				[event.target.name]: event.target.value
-			});
-  		}
+          handleChange(event) {
+            this.setState({
+                [event.target.name]: event.target.value
+            });
+          }
 
-  		handleSubmit(event) {
-    		alert('The text submitted was ' + this.state.text + ' by the author ' + this.state.author);
-    		event.preventDefault();
-  		}
+          handleSubmit(event) {
+            alert('The text submitted was ' + this.state.text + ' by the author ' + this.state.author);
+            event.preventDefault();
+          }
 
-  		render() {
-    		return (
-      			<form onSubmit={this.handleSubmit}>
-	    			<input type="text" value={this.state.author} onChange={this.handleChange} />
-        			<input type="text" value={this.state.text} onChange={this.handleChange} />
-        			<input type="submit" value="Submit" />
-      			</form>
-    		);
-  		}
-	}
-	```
+          render() {
+            return (
+                  <form onSubmit={this.handleSubmit}>
+                    <input type="text" value={this.state.author} onChange={this.handleChange} />
+                    <input type="text" value={this.state.text} onChange={this.handleChange} />
+                    <input type="submit" value="Submit" />
+                  </form>
+            );
+          }
+    }
+    ```
 
 
 ## Resurse
