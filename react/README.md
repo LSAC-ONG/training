@@ -34,7 +34,7 @@ Pentru a folosi React trebuie să aveți [Node.js](https://nodejs.org/en/) și [
   - când se modifică ceva React va compara reprezentarea internă cu ceea ce a primit și va actualiza numai acele componente care s-au modificat
   - din acest motiv, _timpul de încărcare este mult mai mic_
 - **pretty fast learning curve**
-  - React este o librărie și este mai ușor de învățat decât un framework (ex: Angular)
+  - React este o bibliotecă și este mai ușor de învățat decât un framework (ex: Angular)
 - **React Native**
   - **același cod pentru mai multe platforme** (iOS, Android)
 - **JSX**
