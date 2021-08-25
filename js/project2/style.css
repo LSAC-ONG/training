@@ -1,0 +1,18 @@
+* {
+    font-family: 'Pacifico', cursive;
+}
+
+.col {
+    align-items: center;
+    display: flex;
+    font-size: 30px;
+    justify-content: center;
+}
+
+.headline {
+    min-height: 120px;
+}
+
+.result {
+    font-size: 60px;
+}

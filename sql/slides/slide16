@@ -2,10 +2,11 @@
 
 
 
-
 	Good practices
 
 	- indentarea corecta a query-urilor
 	- folositi parametrii pentru tabele in cazul in care folositi mai multe
 	- planificati-va structura atent; daca aveti schimbari de facut,
 	asigurati-va ca nu invalideaza scripturi facute anterior (pe cat posibil)
+	- NU faceti calcule in SQL; partea aceasta ar trebui sa tina de serviciu aplicatiei,
+	nu de baza de date!
