@@ -1,0 +1,24 @@
+{
+  "name": "websockets",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MichaelVonWolfen/training.git"
+  },
+  "keywords": [
+    "websockets",
+    "socket.IO",
+    "asincron"
+  ],
+  "author": "Stoica Mihai",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MichaelVonWolfen/training/issues"
+  },
+  "homepage": "https://github.com/MichaelVonWolfen/training#readme"
+}
