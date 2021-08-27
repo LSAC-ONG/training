@@ -1,0 +1,45 @@
+img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    /*margin: 12px;*/
+}
+.truncate{
+    /*display: inline-block;*/
+    white-space: nowrap!important;
+    overflow: hidden!important;
+    text-overflow: ellipsis!important;
+    width: 130px;
+    /*height: 50px!important;*/
+}
+.flex_custom{
+    display: flex;
+    float: left;
+    padding: 15px 0px;
+    align-content: center;
+    border-bottom: #5a6268 3px solid;
+}
+.flex_custom p,.flex_custom label{
+    margin-left: 20px;
+    margin-top: 10px;
+}
+ul li{
+    text-emphasis: none;
+}
+li>img,li>p{
+    pointer-events: none;
+}
+.limit_height{
+    max-height: 90vh;
+    overflow-y:scroll;
+}
+.my-message{
+    width: 50%;
+    text-align-all: right;
+
+}
+form{
+    position: fixed;
+    bottom: 20px;
+
+}
