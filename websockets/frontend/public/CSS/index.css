@@ -1,0 +1,22 @@
+.padding_25{
+    margin: 0!important;
+    padding-top: 25vh;
+}
+.form_body{
+    min-height: 300px;
+    padding: 30px!important;
+    border-radius: 30px;
+}
+.text_fancy{
+    margin: 30px 0!important;
+    font-size: 20pt;
+}
+.text_fancy input{
+    border-radius: 100px;
+    margin: 40px auto;
+}
+.submit_btn{
+    border-radius: 100px!important;
+    height: 50px;
+    font-size: 16pt!important;
+}
