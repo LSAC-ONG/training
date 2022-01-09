@@ -1,0 +1,3 @@
+https://medium.com/swlh/a-simple-guide-to-understanding-blockchain-8dd09356b153
+https://www.toptal.com/bitcoin/cryptocurrency-for-dummies-bitcoin-and-beyond
+https://github.com/tensor-programming/golang-blockchain/tree/part_4
