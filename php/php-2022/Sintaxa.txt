@@ -1,0 +1,339 @@
+SINTAXA BASIC
+In cadrul unei pagini care contine cod HTML, codul PHP se scrie intre tag-urile <?php si ?>
+
+Exemplu:
+<html>
+	<body>
+		<h1>
+			<?php
+				echo "Hello World!";
+			?>
+		</h1>
+	</body>
+</html>
+
++ Instructiunile in PHP se termina cu ; (punct si virgula)
++ echo este o functie care afiseaza pe pagina web textul dat (aici Hello World!)
+
+---------------------------------------------------------------------------------------------------------------------------------------
+
+Limbajul PHP NU este case sensitive, CU EXCEPTIA numelor de variabila.
+
+Exemplu:
+<?php 
+	Instructiunile		Variabilele
+	echo "HW!"			$nume
+	ECHO "HW!"			$NUME
+	eChO "HW!"			$nUMe
+	sunt echivalente	NU sunt echivalente
+?>
+
+---------------------------------------------------------------------------------------------------------------------------------------
+
+COMENTARII
+
+Un comentariu pe o singura linie poate incepe cu // sau # iar un comentariu pe mai multe linii se scrie intre /* si */
+
+Exemple:
+<?php
+	// Acesta este un comentariu
+	#  Aceste este alt comentariu
+	
+	/* Acesta este un comentariu
+	pe mai multe linii */
+
+	echo "Hello /* World */";
+?>
+
+---------------------------------------------------------------------------------------------------------------------------------------
+
+DECLARAREA VARIABILELOR
+
+In PHP, numele variabilelor este mereu precedat de caracterul $ si numele variabelelor se supune restrictiilor specifice (incepe cu litera sau _, poate contine doar litere A-Z a-z si cifre 0-9 si caracterul _, numele variabilelor este case sensitive)
+
+Exemple:
+<?php
+	$input				$id_user
+	$x1 = 15			$_snek1_2case_3 = "whatever"
+	$color vs $COLOR	$_SESSION
+?>
+
++ variabilele $_SESSION, $_COOKIE, $_POST se numesc variabile superglobale (more on them later)
++ PHP este un limbaj tipat slab (nu e nevoie sa specificam ce tip de data introducem in variabile: int, char, string, array etc.)
+
+---------------------------------------------------------------------------------------------------------------------------------------
+
+OPERATORI
+
+Sintaxa instructiunilor este identica cu 90% dintre limbajele de programare moderne
+
+Exemple:
+<?php
+	echo 5+3;
+	$txt = "LSAC e smecher";
+	echo "Toata lumea striga " . $txt . "!";
+	echo "Toata lumea striga $txt!";
+	$x = 12;
+	$y = 5;
+	echo $x / $y;
+	echo $y ** 3;
+?>
+
+Acestia nu sunt toti operatorii, pentru o lista completa folositi resursele online!
+
+---------------------------------------------------------------------------------------------------------------------------------------
+
+TIPURI DE DATE
+
+PHP accepta urmatoarele tipuri de date:
+- intreg	$x = 20;
+- float		$y = 8.25;
+- boolean	$ok = true;
+- string	$mesaj = "Imi place ciocolata"
+- tablou (array)	$fructe = array("mar", "banana", "cireasa");
+- obiect	
+- NULL		
+- resursa	
+
++ Si in PHP exista operatorul de conversie explicita (op. cast)
+Exemplu: $x = (int)"23";
+
+---------------------------------------------------------------------------------------------------------------------------------------
+
+FUNCTII CU NUMERE
+
+Sunt functii care verifica daca o variabile este int/float/etc
+<?php
+	+ is_int()
+	+ is_float(), is_double()
+	+ is_numeric() = verifica daca un string este un numar
+?>
+
+---------------------------------------------------------------------------------------------------------------------------------------
+
+FUNCTII CU STRINGURI
+
+Exista mai multe functii care permit prelucrarea stringurilor:
+<?php
+	+ strlen()
+	+ str_word_count()
+	+ strrev() = inverseaza un string
+	+ strpos($string_in_care_se_cauta, $string_de_cautat)
+	+ str_replace($string_de_inlocuit, $string_inlocuit, $string)
+	+ etc.
+?>
+
+Recomand folosirea resurselor online pentru toate functiile cu stringuri
+
+---------------------------------------------------------------------------------------------------------------------------------------
+
+STRUCTURI DECIZIONALE
+
+<?php
+	if (conditie) {
+		instructiuni1;
+	} else {
+		instructiuni2;
+	}
+?>
+
+Exista si abominatia:
+<?php
+	if (conditie1) {
+		instructiuni1;
+	} elseif (conditie2) {
+		instructiuni2;
+	}
+?>
+
+---------------------------------------------------------------------------------------------------------------------------------------
+
+SWITCH
+
+<?php
+	switch($x) {
+	case label1:
+		instructiuni1;
+		break;
+	case label2:
+		instructiuni2;
+		break
+	...
+	default:
+		instructiuni_default;
+	}
+?>
+---------------------------------------------------------------------------------------------------------------------------------------
+
+
+STRUCTURI REPETITIVE
+1. WHILE
+<?php
+	while (conditie) {
+		instructiuni;
+	}
+?>
+
+2. DO WHILE
+<?php
+	do {
+		instructiuni;
+	} while (conditie)
+?>
+
+3. FOR
+<?php
+	for (initializare; conditie; incrementare) {
+		instructiuni;
+	}
+?>
+
+---------------------------------------------------------------------------------------------------------------------------------------
+
+4. FOREACH
+<?php
+	$culori = array("verde", "rosu", "albastru");
+	
+	foreach ($culori as $valoare) {
+		echo $valoare;
+	}
+?>
+
+<?php
+	$mancare = array(
+		"cartofi" => 2,
+		"morcovi" => "da",
+		"mere" => 3
+	);
+	
+	foreach ($mancare as $key => $value) {
+		echo $value;
+	}
+?>
+
++ PHP accepta break (care termina fortat o structura repetitiva) si continue (care trece la urmatorul pas intr-o structura repetitiva)
+
+---------------------------------------------------------------------------------------------------------------------------------------
+
+FUNCTII
+
+Declararea functiilor:
+<?php
+	function numeFunctie($parametrii) {
+		instructiuni;
+		// return expresie;
+	}
+?>
+
+Exemple:
+<?php
+	function slogan() {
+
+		echo "Automatica e grea";
+	}
+	
+	slogan();
+
+	function salutare($nume) {
+		echo "Bine ai venit $nume";
+	}
+
+	salutare("Adina");
+
+	function suma($x, $y) {
+		return $x + $y;
+	}
+	
+	echo suma(2, 4);
+?>
+
+---------------------------------------------------------------------------------------------------------------------------------------
+
+STRUCTURI DE DATE
+1. TABLOURI (ARRAYS)
+
+Tablourile din PHP sunt structuri de date care pot contine mai multe date de acelasi fel.
+Se recomanda sa declaram un vector folosing functia array().
+Exemplu:
+<?php
+	$culori = array("verde", "rosu", "albastru");
+?>
+
+variabila $culori va fi un array cu 3 elemente:
+<?php
+	$culori[0] = "verde"
+	$culori[1] = "rosu"
+	$culori[2] = "albastru"
+?>
+
+Mai sus am declarat un vector indexat numeric (asemanator cu C/C++).
+
+---------------------------------------------------------------------------------------------------------------------------------------
+
+2. ASSOCIATIVE ARRAYS
+
+PHP permite si crearea de tablouri asociative (associative array), numit si dictionar:
+<?php
+	$cuvinte = array(
+		"food" => "mancare",
+		"cat" => "pisica",
+		"to walk" => "a merge"
+	);
+?>
+
+Am obtinut un tablou asociativ, unde fiecare element este indetificat printr-o pereche cheie-valoare, astfel: $cuvinte[cheie] = valoare
+<?php
+	$cuvinte["food"] = "mancare"
+	$cuvinte["cat"] = "pisica"
+	$cuvinte["to walk"] = "a merge"
+?>
+
+Pentru mai multe detalii despre tablouri recomand citirea documentatiei
+
+---------------------------------------------------------------------------------------------------------------------------------------
+
+3. COADA
+
+Coada este o structura de date FIFO (First In First Out). In ea se pot accesa elemente doar prin fata si se pot adauga doar prin celalalt capat.
+Comparati cu o coada la casa de marcat: primul client venit este primul servit; clientii se pot aseza la coada la capatul cozii si pot pleca doar la inceput (pe la casa).
+
+                                         .-----.
+                                         |  o  |
+     ~O  ~O  ~O  ~O  ~O  ~O  ~O  ~O  ~O  | /_\ |
+ --> /|\ /|\ /|\ /|\ /|\ /|\ /|\ /|\ /|\ |  "  | -->
+     / \ / \ / \ / \ / \ / \ / \ / \ / \ |     |
+      └-Pot adauga elemente	      └-Pot accesa doar elementul 
+		doar la spatele cozii  		din fata cozii
+
+---------------------------------------------------------------------------------------------------------------------------------------
+
+4. STIVA
+
+Stiva este o structura de date LIFO (Last In First Out). Intrarile si iesirile din stiva se fac pe la acelasi capat.
+Stiva este ca un turn de farfurii: pentru a scoate o farfurie de la jumatatea stivei, trebuie mai intai sa scoatem pe rand toate farfuriile de deasupra.
+
+	\_______________________/
+			A     |
+			|     V
+	\_______________________/ <---- Toate iesirile si intrarile se fac 
+	\_______________________/	pe la capatul de sus
+	\_______________________/
+	\_______________________/
+	\_______________________/ <---- Pentru a scoate o farfurie, trebuie date la o parte
+	\_______________________/	toate celalte farfurii de deasupra
+	\_______________________/
+	\_______________________/
+-------------------------------------------
+
+---------------------------------------------------------------------------------------------------------------------------------------
+
+5. DEQUE (coada dubla)
+
+Coada dubla este, asa cum sugereaza numele, o structura de date unde se pot face intrari si iesiri pe la ambele capete. Nu este folosita des, deoarece are putine aplicatii practice.
+
+
+     ~O  ~O  ~O  ~O  ~O  ~O  ~O  ~O  ~O 
+ --> /|\ /|\ /|\ /|\ /|\ /|\ /|\ /|\ /|\ <--
+ <-- / \ / \ / \ / \ / \ / \ / \ / \ / \ -->
+      └--Pot face intrari si iesiri---┘
+		 pe la ambele capete

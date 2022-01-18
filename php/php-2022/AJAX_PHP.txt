@@ -1,0 +1,38 @@
+CE ESTE AJAX?
+
+AJAX = Asynchronous JavaScript and XML
+
+AJAX este o "tehnologie" folosita pentru a crea pagini web dinamice, care isi modifica structura/continutul in timp real, in functie de inputul utilizatorului si FARA A REINCARCA/REDIRECTA pagina.
+
+Spre exemplu, folosim AJAX pentru:
+- a afisa un mesaj de eroare daca input-ul utilizatorului nu este corect
+- a sugera utilizatorului nume/produse pe masura ce tasteaza
+- a actualiza pagina cu diverse informatii de la server (nr de utilizatori logati etc)
+
+
+
+CUM FUNCTIONEAZA AJAX
+
+AJAX se bazeaza pe comunicarea dintre browser (client) si server in timp real, asincron.
+
+		BROWSER											SERVER				
+┌────────────────────┐							┌────────────────────┐
+│                    │			request			│                    │
+│ creeaza un request │ -----------------------> │ verifica requestul │
+│                    │							│  |            |    │
+│                    │							│  |OK          |    │
+│                    │							│  |            |    │
+│                    │			promise 		│  V            |    │
+│primeste promise-ul │ <----------------------- │  promise      |    │
+│         .          │							│  |            |    │
+│         .          │							│  |            |NOT │
+│         .          │							│  V            |OK  │
+│  continua treaba   │							│ ia date       |    │
+│         .          │							│  |            |    │
+│         .          │							│  |            |    │
+│         .          │							│  |            |    │
+│         .          │			response		│  V            |    │
+│ actualizeaza pagina│ <----------------------- │ response      |    │
+│ cu datele          │			eroare			│               V    │
+│ din response/eroare│ <------------------------┼--------- eroare    │
+└────────────────────┘							└────────────────────┘
