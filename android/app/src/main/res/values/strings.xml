@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Demo-Training-Android-Final</string>
+    <string name="todo_content_description">TODO</string>
+    <string name="title_placeholder">Lorem ipsum dolor</string>
+    <string name="description_placeholder">Some random description</string>
+    <string name="title_field">Title:</string>
+    <string name="description_field">Description:</string>
+    <string name="submit_text">Submit</string>
+    <string name="add_todo">Add Todo</string>
+</resources>
